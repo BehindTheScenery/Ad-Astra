@@ -25,6 +25,7 @@ public class ModLangProvider extends LanguageProvider {
         ModItems.ITEMS.stream().filter(e -> !(e.get() instanceof BlockItem)).forEach(entry -> addItem(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath().replace("_", " "))));
         ModEntityTypes.ENTITY_TYPES.stream().forEach(entry -> addEntityType(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath().replace("_", " "))));
 
+
         add("advancements.ad_astra.ad_astra.description", "§bConstruct a NASA Workbench, allowing you to craft rockets");
         add("advancements.ad_astra.ad_astra.title", "Ad Astra");
         add("advancements.ad_astra.astro_cuisine.description", "§bThrow raw food into the atmosphere while in orbit, causing it to cook.");
@@ -233,6 +234,8 @@ public class ModLangProvider extends LanguageProvider {
         add("text.resourcefulconfig.ad_astra.option.fuelRefinery.maxEnergy", "Max Energy");
         add("text.resourcefulconfig.ad_astra.option.fuelRefinery.tankSize", "Tank Size");
         add("text.resourcefulconfig.ad_astra.option.general", "General");
+        add("text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen", "Orbits has oxygen");
+        add("text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen.tooltip", "If true, all orbits will have oxygen.");
         add("text.resourcefulconfig.ad_astra.option.general.acidRainBurns", "Acid Rain Burns");
         add("text.resourcefulconfig.ad_astra.option.general.acidRainDamage", "Acid Rain Damage");
         add("text.resourcefulconfig.ad_astra.option.general.allowFlagImages", "Allow Images on Flags");

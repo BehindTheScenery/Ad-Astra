@@ -27,6 +27,15 @@ import earth.terrarium.botarium.api.fluid.FluidHooks;
     }
 )
 public final class AdAstraConfig {
+    // Config for Eternal Oblivion
+    @ConfigEntry(
+            id = "orbitsHasOxygen",
+            type = EntryType.BOOLEAN,
+            translation = "text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen"
+    )
+    @Comment(value = "If true, all orbits will have oxygen.", translation = "text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen.tooltip")
+    public static boolean orbitsHasOxygen = false;
+
 
     @ConfigEntry(
         id = "doEntityGravity",

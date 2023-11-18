@@ -1,6 +1,7 @@
 package earth.terrarium.ad_astra.common.util;
 
 import earth.terrarium.ad_astra.AdAstra;
+import earth.terrarium.ad_astra.common.config.AdAstraConfig;
 import earth.terrarium.ad_astra.common.data.PlanetData;
 import earth.terrarium.ad_astra.common.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
@@ -30,7 +31,7 @@ public class OxygenUtils {
     public static boolean levelHasOxygen(Level level) {
         if (!PlanetData.isOxygenated(level.dimension())) {
             // Ensure all non-Ad Astra dimensions have oxygen by default
-            return !ModUtils.isSpacelevel(level);
+            return !(ModUtils.isPlanet(level) || (ModUtils.isOrbitlevel(level) && !AdAstraConfig.orbitsHasOxygen));
         }
         return true;
     }
