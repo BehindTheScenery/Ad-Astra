@@ -36,6 +36,17 @@ public final class AdAstraConfig {
     @Comment(value = "If true, all orbits will have oxygen.", translation = "text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen.tooltip")
     public static boolean orbitsHasOxygen = false;
 
+    @ConfigEntry(
+            id = "actionOnFallFromOrbit",
+            type = EntryType.ENUM,
+            translation = "text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit"
+    )
+    @Comment(value = "Action, that will be performed when player falls under y=0 in orbit dimensions", translation = "text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit.tooltip")
+    public static ActionOnFallFromOrbitTypes actionOnFallFromOrbit = ActionOnFallFromOrbitTypes.KILL;
+
+    public enum ActionOnFallFromOrbitTypes {
+        KILL, TELEPORT_TO_PLANET, TELEPORT_UP
+    };
 
     @ConfigEntry(
         id = "doEntityGravity",

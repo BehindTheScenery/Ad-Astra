@@ -606,6 +606,8 @@
   "text.resourcefulconfig.ad_astra.option.general": "Общая Настройка",
   "text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen": "Орбиты имеют кислород",
   "text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen.tooltip": "Должны ли орбиты иметь кислород",
+  "text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit": "Когда игрок падает с орбиты",
+  "text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit.tooltip": "Действие, которое произойдёт, когда игрок упадёт ниже y=0 на орбите.",
   "text.resourcefulconfig.ad_astra.option.general.acidRainBurns": "Кислотный дождь убивает",
   "text.resourcefulconfig.ad_astra.option.general.doEntityGravity": "Сделать гравитацию сущности",
   "text.resourcefulconfig.ad_astra.option.general.doEntityGravity.tooltip": "Делать ли гравитацию для предметов, лодок, стрел и т.д.",
