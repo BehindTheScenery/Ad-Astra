@@ -37,6 +37,14 @@ public final class AdAstraConfig {
     public static boolean orbitsHasOxygen = false;
 
     @ConfigEntry(
+            id = "isOrbitsCold",
+            type = EntryType.BOOLEAN,
+            translation = "text.resourcefulconfig.ad_astra.option.general.isOrbitsCold"
+    )
+    @Comment(value = "If true, all orbits will be cold.", translation = "text.resourcefulconfig.ad_astra.option.general.isOrbitsCold.tooltip")
+    public static boolean isOrbitsCold = true;
+
+    @ConfigEntry(
             id = "actionOnFallFromOrbit",
             type = EntryType.ENUM,
             translation = "text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit"

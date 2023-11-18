@@ -238,6 +238,8 @@ public class ModLangProvider extends LanguageProvider {
         add("text.resourcefulconfig.ad_astra.option.general.orbitsHasOxygen.tooltip", "If true, all orbits will have oxygen.");
         add("text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit", "When player fall from orbit");
         add("text.resourcefulconfig.ad_astra.option.general.actionOnFallFromOrbit.tooltip", "Action, that will be performed when player falls under y=0 in orbit dimensions.");
+        add("text.resourcefulconfig.ad_astra.option.general.isOrbitsCold", "Is orbits cold");
+        add("text.resourcefulconfig.ad_astra.option.general.isOrbitsCold.tooltip", "If true, all orbits will be cold.");
         add("text.resourcefulconfig.ad_astra.option.general.acidRainBurns", "Acid Rain Burns");
         add("text.resourcefulconfig.ad_astra.option.general.acidRainDamage", "Acid Rain Damage");
         add("text.resourcefulconfig.ad_astra.option.general.allowFlagImages", "Allow Images on Flags");

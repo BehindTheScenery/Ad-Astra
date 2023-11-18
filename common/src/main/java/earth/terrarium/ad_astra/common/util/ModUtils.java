@@ -56,6 +56,7 @@ public class ModUtils {
 
     public static final float VANILLA_GRAVITY = 9.806f;
     public static final float ORBIT_TEMPERATURE = -270.0f;
+    public static final float DEFAULT_TEMPERATURE = 20.0f;
 
     /**
      * Teleports an entity to a different dimension. If the entity is a player in a rocket, the player will teleport with a lander. If the entity is raw food, the food will be cooked.
@@ -230,9 +231,9 @@ public class ModUtils {
      */
     public static float getWorldTemperature(Level level) {
         if (isOrbitlevel(level)) {
-            return ORBIT_TEMPERATURE;
+            return AdAstraConfig.isOrbitsCold ? ORBIT_TEMPERATURE : DEFAULT_TEMPERATURE;
         }
-        return PlanetData.getPlanetFromLevel(level.dimension()).map(Planet::temperature).orElse(20.0f);
+        return PlanetData.getPlanetFromLevel(level.dimension()).map(Planet::temperature).orElse(DEFAULT_TEMPERATURE);
     }
 
     /**
